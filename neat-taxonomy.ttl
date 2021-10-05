@@ -3,7 +3,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix neat: <http://data.windenergy.dtu.dk/controlled-terminology/neat/> .
+@prefix neat: <http://purl.org/neat/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
@@ -18,7 +18,7 @@
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://data.windenergy.dtu.dk/controlled-terminology/neat/> a skos:ConceptScheme;
+<http://purl.org/neat/> a skos:ConceptScheme;
   dct:creator <http://orcid.org/0000-0002-9381-9693>, <http://orcid.org/0000-0003-4124-9040>;
   dct:description "A taxonomical organization of research topics in wind energy which follows a typical lifecycle of wind farm development."@en;
   dct:title "NEAT: wiNd Energy tAxonomy of Topics"@en;
@@ -38,18 +38,18 @@ neat:IEVref a rdf:Property;
 neat:Economics a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>, <https://orcid.org/0000-0002-9381-9693>;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:BusinessModels, neat:LevelizedCostofEnergyModels, neat:MarketModels,
     neat:ProjectFinance, neat:SupportSchemes;
   skos:prefLabel "Economics"@en;
-  skos:topConceptOf <http://data.windenergy.dtu.dk/controlled-terminology/neat/> .
+  skos:topConceptOf <http://purl.org/neat/> .
 
 neat:BusinessModels a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:Economics;
   skos:definition "A conceptual structure that supports the viability of wind energy projects and details how they operate to create profit."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Business Models"@en .
 
 neat:LevelizedCostofEnergyModels a skos:Concept;
@@ -57,68 +57,68 @@ neat:LevelizedCostofEnergyModels a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:Economics;
   skos:definition "An expression of the production cost of each unit of electricity generated over the working life of the plant taking into account wind farm development costs, capital investment, financial costs and lifetime running costs."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Levelized Cost of Energy Models"@en .
 
 neat:ProjectFinance a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:Economics;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Project Finance"@en .
 
 neat:MarketModels a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:Economics;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Market Models"@en .
 
 neat:SupportSchemes a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:Economics;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Support Schemes"@en .
 
 neat:OperationMaintenance a skos:Concept;
-  neat:IEVref "192-06"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  neat:IEVref "192-06"@en;
   skos:definition "Combination of all technical and management actions intended to retain an item in, or restore it to, a state in which it can perform as required."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:Commissioning, neat:Decommissioning, neat:Forecasting, neat:HealthSafety,
     neat:Installation, neat:MaintenanceScheduling;
   skos:prefLabel "Operation & Maintenance"@en;
-  skos:topConceptOf <http://data.windenergy.dtu.dk/controlled-terminology/neat/> .
+  skos:topConceptOf <http://purl.org/neat/> .
 
 neat:Commissioning a skos:Concept;
-  neat:IEVref "821-12"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  neat:IEVref "821-12"@en;
   skos:broader neat:OperationMaintenance;
   skos:definition "Activities undertaken to prepare a system or product prior to demonstrating that it meets its specified requirements."@en;
   skos:editorialNote "SOURCE: IEC 62278:2002, 3.50"@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Commissioning"@en .
 
 neat:Decommissioning a skos:Concept;
-  neat:IEVref "395-08"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  neat:IEVref "395-08"@en;
   skos:broader neat:OperationMaintenance;
   skos:definition "Administrative and technical actions taken to allow the removal of some or all of the regulatory controls from a facility"@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:EndofLifeExtension;
   skos:prefLabel "Decommissioning"@en .
 
 neat:EndofLifeExtension a skos:Concept;
-  neat:IEVref "904-01-17"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  neat:IEVref "904-01-17"@en;
   skos:broader neat:Decommissioning;
   skos:definition "When the life cycle stage of a product instead of end is extended for a certain period."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:ReCertification, neat:Recycling, neat:Repowering, neat:Revamping;
   skos:prefLabel "End-of-Life Extension"@en .
 
@@ -126,14 +126,14 @@ neat:ReCertification a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:EndofLifeExtension;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Re-Certification"@en .
 
 neat:Recycling a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:EndofLifeExtension;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Recycling"@en .
 
 neat:Repowering a skos:Concept;
@@ -141,7 +141,7 @@ neat:Repowering a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:EndofLifeExtension;
   skos:definition "Wind turbines are dismantled and new wind turbines are installed in a brownfield and/or greenfield site."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Repowering"@en .
 
 neat:Revamping a skos:Concept;
@@ -150,7 +150,7 @@ neat:Revamping a skos:Concept;
   skos:altLabel "Enhancement"@en, "Lifetime Extension"@en, "Reactivation"@en, "Refurbishment"@en;
   skos:broader neat:EndofLifeExtension;
   skos:definition "An act of upgrading certain components of a wind turbine to extend the overall life time of the turbine (e.g. generator). The overall external layout of the farm remains unchanged (e.g. hub height, siting, size). Revamping differs from a normal operation and maintenance activities. New technology is installed or components are replaced instead of the initial equipment of the turbine."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Revamping"@en .
 
 neat:Forecasting a skos:Concept;
@@ -158,14 +158,14 @@ neat:Forecasting a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:OperationMaintenance;
   skos:definition "An estimate of the expected parameter from a system at a given future date."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Forecasting"@en .
 
 neat:HealthSafety a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:OperationMaintenance;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Health & Safety"@en .
 
 neat:Installation a skos:Concept;
@@ -173,53 +173,53 @@ neat:Installation a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:broader neat:OperationMaintenance;
   skos:definition "An apparatus or a set of devices and/or apparatuses associated in a given location to fulfil specified purposes, including all means for their satisfactory operation"@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Installation"@en .
 
 neat:MaintenanceScheduling a skos:Concept;
-  neat:IEVref "192-06"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  neat:IEVref "192-06"@en;
   skos:broader neat:OperationMaintenance;
   skos:definition "A maintenance carried out in accordance with a specified schedule, which can identify the need for some corrective maintenance action."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Maintenance Scheduling"@en .
 
 neat:Siting a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:definition "A process of evaluating a number of factor before deciding to pursue development of a new wind farm project. These factors include: wind resource and compatibility of land/area, environmental impacts and community input (i.e., social acceptance)"@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:DesignConditions, neat:Infrastructures, neat:LongTermExtrapolation,
     neat:ResourceAssessment, neat:SpatialPlanning, neat:WindAtlas, neat:WindMapping;
   skos:prefLabel "Siting"@en;
-  skos:topConceptOf <http://data.windenergy.dtu.dk/controlled-terminology/neat/> .
+  skos:topConceptOf <http://purl.org/neat/> .
 
 neat:DesignConditions a skos:Concept;
-  neat:IEVref "415-02"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
+  neat:IEVref "415-02"@en;
   skos:altLabel "Design Situation"@en;
   skos:broader neat:Siting;
   skos:definition "A possible mode of wind turbine operation, e.g. power production, parking etc."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:Turbulence;
   skos:prefLabel "Design Conditions"@en .
 
 neat:Turbulence a skos:Concept;
-  neat:IEVref "705-04"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9041>;
+  neat:IEVref "705-04"@en;
   skos:broader neat:DesignConditions;
   skos:definition "Random variations in velocity within a liquid or gaseous medium which may induce heterogeneous values of certain characteristics of the medium, such as refractive index."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Turbulence"@en .
 
 neat:Infrastructures a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9042>;
   skos:broader neat:Siting;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Infrastructures"@en .
 
 neat:LongTermExtrapolation a skos:Concept;
@@ -227,34 +227,34 @@ neat:LongTermExtrapolation a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9043>;
   skos:broader neat:Siting;
   skos:definition "Long-term extrapolation involves making statistical forecasts by using historical trends that are projected for a specified period of time into the future.This type of extrapolation is only used for time-series forecasts."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Long-Term Extrapolation"@en .
 
 neat:ResourceAssessment a skos:Concept;
-  neat:IEVref "351-42"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9044>;
+  neat:IEVref "351-42"@en;
   skos:broader neat:Siting;
   skos:definition "An estimate of the total energy production of a wind turbine generator system during a one-year period by applying the power curve to different reference wind speed frequency distributions at hub height, assuming 100% availability."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Resource Assessment"@en .
 
 neat:SpatialPlanning a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9045>;
   skos:broader neat:Siting;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:EnviromentalImpact, neat:LegalAspects;
   skos:prefLabel "Spatial Planning"@en .
 
 neat:EnviromentalImpact a skos:Concept;
-  neat:IEVref "904-01"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9046>;
+  neat:IEVref "904-01"@en;
   skos:broader neat:SpatialPlanning;
   skos:definition "A change to the environment, whether adverse or beneficial, wholly or partly resulting from environmental aspects."@en;
   skos:editorialNote "SOURCE: IEC Guide 109:2012, 3.5, modified – The expression \"an organization's\" has been omitted."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:NatureImpacts, neat:NoisePerception, neat:SocialAcceptance;
   skos:prefLabel "Enviromental Impact"@en .
 
@@ -262,7 +262,7 @@ neat:NatureImpacts a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9047>;
   skos:broader neat:EnviromentalImpact;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Nature Impacts"@en .
 
 neat:NoisePerception a skos:Concept;
@@ -270,7 +270,7 @@ neat:NoisePerception a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9048>;
   skos:broader neat:EnviromentalImpact;
   skos:definition "Individual perception of the acoustic noise level produced by a machine under specified conditions of operation and measurement."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Noise Perception"@en .
 
 neat:SocialAcceptance a skos:Concept;
@@ -278,14 +278,14 @@ neat:SocialAcceptance a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9049>;
   skos:altLabel "Community Input"@en;
   skos:broader neat:EnviromentalImpact;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Social Acceptance"@en .
 
 neat:LegalAspects a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9050>;
   skos:broader neat:SpatialPlanning;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Legal Aspects"@en .
 
 neat:WindAtlas a skos:Concept;
@@ -293,7 +293,7 @@ neat:WindAtlas a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9051>;
   skos:broader neat:Siting;
   skos:definition "A wind atlas is a systematic and comprehensive collection of generalized wind climates derived by the wind atlas methodology."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Wind Atlas"@en .
 
 neat:WindMapping a skos:Concept;
@@ -301,35 +301,35 @@ neat:WindMapping a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9052>;
   skos:broader neat:Siting;
   skos:definition "A process of visualizing spatial variation of wind speed over geographic areas to help choosing prospective development areas for wind turbines installation."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Wind Mapping"@en .
 
 neat:WindPowerPlant a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:definition "A power station comprising a group or groups of wind turbines."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:AncillaryServices, neat:GridConnection, neat:Loads, neat:Performance,
     neat:WindFarm;
   skos:prefLabel "Wind Power Plant"@en;
-  skos:topConceptOf <http://data.windenergy.dtu.dk/controlled-terminology/neat/> .
+  skos:topConceptOf <http://purl.org/neat/> .
 
 neat:AncillaryServices a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9049>;
   skos:broader neat:WindPowerPlant;
   skos:definition "Services necessary for the operation of an electric power system provided by the system operator and/or by power system users."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:note "System ancillary services may include the participation in frequency regulation, reactive power regulation, active power reservation, etc."@en;
   skos:prefLabel "Ancillary Services"@en .
 
 neat:GridConnection a skos:Concept;
-  neat:IEVref "692-01-03"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9050>;
+  neat:IEVref "692-01-03"@en;
   skos:broader neat:WindPowerPlant;
   skos:definition "A connection to an electric power network."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:ArrayCables, neat:Substation, neat:TransmissionSystem;
   skos:prefLabel "Grid Connection"@en .
 
@@ -337,7 +337,7 @@ neat:ArrayCables a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9051>;
   skos:broader neat:GridConnection;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Array Cables"@en .
 
 neat:Substation a skos:Concept;
@@ -345,44 +345,44 @@ neat:Substation a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9052>;
   skos:broader neat:GridConnection;
   skos:definition "A part of a power system, concentrated in a given place, including mainly the terminations of transmission or distribution lines switchgear and housing and which may also include transformers. It generally includes facilities necessary for system security and control (e.g. the protective devices)."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:note "According to the nature of the system within which the substation is included, a prefix may qualify it."@en;
   skos:prefLabel "Substation"@en .
 
 neat:TransmissionSystem a skos:Concept;
-  neat:IEVref "704"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9053>;
+  neat:IEVref "704"@en;
   skos:broader neat:GridConnection;
   skos:definition "Whole of the means of transmission, comprising the transmission medium, terminal equipment, any necessary intermediate equipment and any equipment provided for such ancillary purposes as power feeding, supervision and testing."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:note "A transmission system is in accordance with a set of principles that is also called “transmission system” (see IEV 704-04-10)."@en;
   skos:prefLabel "Transmission System"@en .
 
 neat:Loads a skos:Concept;
-  neat:IEVref "415-02"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9054>;
+  neat:IEVref "415-02"@en;
   skos:altLabel "Load Cases"@en;
   skos:broader neat:WindPowerPlant;
   skos:definition "A combination of design situations and external conditions which result in a structural loading."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Loads"@en .
 
 neat:Performance a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9055>;
   skos:broader neat:WindPowerPlant;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Performance"@en .
 
 neat:WindFarm a skos:Concept;
-  neat:IEVref "415-01"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9056>;
+  neat:IEVref "415-01"@en;
   skos:broader neat:WindPowerPlant;
   skos:definition "A group of wind turbine generator jointly operated."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:Wakes, neat:WindFarmControl;
   skos:prefLabel "Wind Farm"@en .
 
@@ -391,7 +391,7 @@ neat:Wakes a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9057>;
   skos:broader neat:WindFarm;
   skos:definition "A region behind the wind turbine with reduced wind speed and increased turbulence due to the extraction of energy from the wind when the flow pass through the rotor."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Wakes"@en .
 
 neat:WindFarmControl a skos:Concept;
@@ -399,18 +399,18 @@ neat:WindFarmControl a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9058>;
   skos:broader neat:WindFarm;
   skos:definition "A sub‑system that receives information about the condition of the wind farm and/or its environment and adjusts the turbines in order to operate them within their operating limits."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Wind Farm Control"@en .
 
 neat:WindTurbine a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9040>;
   skos:definition "A rotating machinery in which the kinetic wind energy is transformed into another form of energy."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:ConceptDesign, neat:Controls, neat:Nacelle, neat:Rotor, neat:SupportStructure,
     neat:Tower;
   skos:prefLabel "Wind Turbine"@en;
-  skos:topConceptOf <http://data.windenergy.dtu.dk/controlled-terminology/neat/> .
+  skos:topConceptOf <http://purl.org/neat/> .
 
 neat:ConceptDesign a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
@@ -418,7 +418,7 @@ neat:ConceptDesign a skos:Concept;
   skos:broader neat:WindTurbine;
   skos:definition "An activity applied in order to analyse and transform specified requirements into acceptable design solutions."@en;
   skos:editorialNote "This entry was numbered 351-21-29 in IEC 60050-351:2006."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:Aerial, neat:HorizontalAxis, neat:MonoMultiRotor, neat:VerticalAxis;
   skos:prefLabel "Concept Design"@en .
 
@@ -428,7 +428,7 @@ neat:Aerial a skos:Concept;
   skos:altLabel "Airborne"@en;
   skos:broader neat:ConceptDesign;
   skos:definition "An aerial wind turbine is a design concept for a wind turbine with a rotor supported in the air without a tower, thus benefiting from more mechanical and aerodynamic options, the higher velocity and persistence of wind at high altitudes."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Aerial"@en .
 
 neat:HorizontalAxis a skos:Concept;
@@ -436,7 +436,7 @@ neat:HorizontalAxis a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9059>;
   skos:broader neat:ConceptDesign;
   skos:definition "A wind turbine which rotor axis is horizontal."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Horizontal Axis"@en .
 
 neat:MonoMultiRotor a skos:Concept;
@@ -444,7 +444,7 @@ neat:MonoMultiRotor a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9060>;
   skos:broader neat:ConceptDesign;
   skos:definition "A wind turbine with one or more rotors, independent on the number of blades."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Mono-Multi Rotor"@en .
 
 neat:VerticalAxis a skos:Concept;
@@ -452,7 +452,7 @@ neat:VerticalAxis a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9061>;
   skos:broader neat:ConceptDesign;
   skos:definition "A wind turbine which rotor axis is vertical."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Vertical Axis"@en .
 
 neat:Controls a skos:Concept;
@@ -460,7 +460,7 @@ neat:Controls a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9062>;
   skos:broader neat:WindTurbine;
   skos:definition "A purposeful action on or in a process to meet specified objectives."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:BlackBox;
   skos:prefLabel "Controls"@en .
 
@@ -468,7 +468,7 @@ neat:BlackBox a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9063>;
   skos:broader neat:Controls;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Black-Box"@en .
 
 neat:Nacelle a skos:Concept;
@@ -476,18 +476,18 @@ neat:Nacelle a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9064>;
   skos:broader neat:WindTurbine;
   skos:definition "A housing which contains the drive‑train and other elements on top of a horizontal axis wind turbine tower."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:Cooling, neat:Gearbox, neat:Generator, neat:MainShaft, neat:PowerElectronics,
     neat:TurbineControl;
   skos:prefLabel "Nacelle"@en .
 
 neat:Cooling a skos:Concept;
-  neat:IEVref "411-44"@en;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9065>;
+  neat:IEVref "411-44"@en;
   skos:broader neat:Nacelle;
   skos:definition "A procedure by means of which heat resulting from losses occurring in a machine is given up to a primary coolant which may be continuously replaced or may itself be cooled by a secondary coolant in a heat exchanger."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Cooling"@en .
 
 neat:Gearbox a skos:Concept;
@@ -495,7 +495,7 @@ neat:Gearbox a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9066>;
   skos:broader neat:Nacelle;
   skos:definition "A protective casing providing a reservoir of oil or grease for the gearing."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Gearbox"@en .
 
 neat:Generator a skos:Concept;
@@ -503,14 +503,14 @@ neat:Generator a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9067>;
   skos:broader neat:Nacelle;
   skos:definition "A machine which converts mechanical energy into electrical energy."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Generator"@en .
 
 neat:MainShaft a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9068>;
   skos:broader neat:Nacelle;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Main Shaft"@en .
 
 neat:PowerElectronics a skos:Concept;
@@ -518,7 +518,7 @@ neat:PowerElectronics a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9069>;
   skos:broader neat:Nacelle;
   skos:definition "A field of electronics which deals with the conversion or switching of electric power with or without control of that power."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Power Electronics"@en .
 
 neat:TurbineControl a skos:Concept;
@@ -526,7 +526,7 @@ neat:TurbineControl a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9070>;
   skos:broader neat:Nacelle;
   skos:definition "A wind turbine sub‑system that receives information about the condition of the wind turbine and/or its environment and adjusts the turbine in order to operate it within its operating limits."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Turbine Control"@en .
 
 neat:Rotor a skos:Concept;
@@ -534,7 +534,7 @@ neat:Rotor a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9071>;
   skos:broader neat:WindTurbine;
   skos:definition "One of the main part of a wind turbine"@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:Blades, neat:Hub;
   skos:prefLabel "Rotor"@en .
 
@@ -543,7 +543,7 @@ neat:Blades a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9072>;
   skos:broader neat:Rotor;
   skos:definition "Components of a wind turbine that harness wind energy and drive the rotor of a wind turbine."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Blades"@en .
 
 neat:Hub a skos:Concept;
@@ -551,7 +551,7 @@ neat:Hub a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9073>;
   skos:broader neat:Rotor;
   skos:definition "A fixture for attaching the blades or blade assembly to the rotor shaft."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Hub"@en .
 
 neat:SupportStructure a skos:Concept;
@@ -559,7 +559,7 @@ neat:SupportStructure a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9074>;
   skos:broader neat:WindTurbine;
   skos:definition "A part of a wind turbine comprising the tower and foundation."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:Floating, neat:Foundation, neat:MooringLines, neat:Substructure;
   skos:prefLabel "Support Structure"@en .
 
@@ -567,7 +567,7 @@ neat:Floating a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9075>;
   skos:broader neat:SupportStructure;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Floating"@en .
 
 neat:Foundation a skos:Concept;
@@ -575,21 +575,21 @@ neat:Foundation a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9076>;
   skos:broader neat:SupportStructure;
   skos:definition "A structure set in the ground, to which the base of a support is attached to provide the necessary anchorage to withstand all applied loads."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Foundation"@en .
 
 neat:MooringLines a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9077>;
   skos:broader neat:SupportStructure;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Mooring Lines"@en .
 
 neat:Substructure a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <http://orcid.org/0000-0003-4124-9078>;
   skos:broader neat:SupportStructure;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Substructure"@en .
 
 neat:Tower a skos:Concept;
@@ -597,7 +597,7 @@ neat:Tower a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9079>;
   skos:broader neat:WindTurbine;
   skos:definition "A support which may be made of such material as steel, wood, concrete, and comprising a body which is normally four-sided, and cross-arms."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:narrower neat:Lattice, neat:Tubular;
   skos:prefLabel "Tower"@en .
 
@@ -606,7 +606,7 @@ neat:Tubular a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9080>;
   skos:broader neat:Tower;
   skos:definition "A structure of a tower having the form or shape of a tube slightly conical (i.e. with their diameter increasing towards the base) in order to increase their strength and to save materials at the same time."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Tubular"@en .
 
 neat:Lattice a skos:Concept;
@@ -614,5 +614,5 @@ neat:Lattice a skos:Concept;
   dct:creator <http://orcid.org/0000-0003-4124-9081>;
   skos:broader neat:Tower;
   skos:definition "A structure consisting of strips of wood or metal crossed and fastened together with square-shaped spaces left between, used as a support for climbing plants."@en;
-  skos:inScheme <http://data.windenergy.dtu.dk/controlled-terminology/neat/>;
+  skos:inScheme <http://purl.org/neat/>;
   skos:prefLabel "Lattice"@en .
