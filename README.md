@@ -14,8 +14,8 @@ In 2020, the definition of taxonomy terms were added and the taxonomy was conver
 In 2021, the persistent URL [purl.org/neat](http://purl.org/neat) has been registered for the taxonomy. This allows us to: 
 1. If there is a needed to move the taxonomy to another domain (currently under data.windenergy.dtu.dk) URLs will be still resolvable and unchanged
 2. Shorten URls for the taxonomy terms and properties such as:
-  - [purl.org/aspect](http://purl.org/aspect) can be used instead of [http://data.windenergy.dtu.dk/controlled-terminology/neat/](http://data.windenergy.dtu.dk/controlled-terminology/neat/)
-  - [purl.org/aspect/WindMapping](http://purl.org/aspect/WindMapping) can be used instead of [http://data.windenergy.dtu.dk/controlled-terminology/neat/WindMapping](http://data.windenergy.dtu.dk/controlled-terminology/neat/WindMapping)
+  - [purl.org/neat](http://purl.org/neat) can be used instead of [http://data.windenergy.dtu.dk/controlled-terminology/neat/](http://data.windenergy.dtu.dk/controlled-terminology/neat/)
+  - [purl.org/neat/WindMapping](http://purl.org/neat/WindMapping) can be used instead of [http://data.windenergy.dtu.dk/controlled-terminology/neat/WindMapping](http://data.windenergy.dtu.dk/controlled-terminology/neat/WindMapping)
 
 Currently `NEAT` is being extended by [IEA Wind TCP Task 41](https://iea-wind.org/task41/).
 
