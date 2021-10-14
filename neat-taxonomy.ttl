@@ -19,7 +19,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.org/neat/> a skos:ConceptScheme;
-  dct:creator <http://orcid.org/0000-0002-9381-9693>, <http://orcid.org/0000-0003-4124-9040>;
+  dct:creator <https://orcid.org/0000-0002-9381-9693>, <https://orcid.org/0000-0003-0732-4617>,
+    <https://orcid.org/0000-0003-4124-9040>;
   dct:description "A taxonomical organization of research topics in wind energy which follows a typical lifecycle of wind farm development."@en;
   dct:title "NEAT: wiNd Energy tAxonomy of Topics"@en;
   pav:createdOn "2020-12-01T00:00:00+01:00"@en;
