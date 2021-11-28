@@ -9,7 +9,7 @@ The report of this work is available at Zenodo: https://www.zenodo.org/record/11
 In 2018, the taxonomy of topics was improved during the internal project of DTU Wind Energy titled 'FAIR Digitalization':
 https://www.zenodo.org/record/1493874#.XSD7TaeQ3RY
 
-In 2020, the definition of taxonomy terms were added and the taxonomy was converted into FAIR machine-actionable controlled vocabulary using [sheet2rdf](https://github.com/fair-data-collective/sheet2rdf).  The controlled vocabulary is served to humans and machines using an instace of [OntoStack](http://data.windenergy.dtu.dk/ontologies/view/) hosted by DTU Wind Energy. `sheet2rdf` and `OntoStack` are developed by [FAIR Data Collective](http://fairdatacollective.org).
+In 2020, the definition of taxonomy terms were added and the taxonomy was converted into FAIR machine-actionable controlled vocabulary using [sheet2rdf](https://github.com/fair-data-collective/sheet2rdf).  The controlled vocabulary is served to humans and machines using an instace of [OntoStack](http://data.windenergy.dtu.dk/ontologies/view/) hosted by DTU Wind Energy. `sheet2rdf` and `OntoStack` are developed by Nikola Vasiljevic, who has sole ownership of these services.
 
 In 2021, the persistent URL [purl.org/neat](http://purl.org/neat) has been registered for the taxonomy. This allows us to: 
 1. If there is a needed to move the taxonomy to another domain (currently under data.windenergy.dtu.dk) URLs will be still resolvable and unchanged
